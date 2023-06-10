@@ -1,0 +1,52 @@
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: lightblue;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+}
+
+.member img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.member h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.member p {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.member-info {
+  margin-bottom: 20px;
+}
+
+.member-info li {
+  margin-bottom: 10px;
+}
+
+.member-info strong {
+  font-weight: bold;
+}
+
+.member-info span {
+  margin-left: 10px;
+}
+
+.experience {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.experience li {
+  margin-bottom: 10px;
+}
