@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  django_app:
+    build: .
+    volumes:
+      - static_vol:/app/frontend/build/static
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - static_vol:/app/frontend/build/static
+    ports:
+      - "80:80"
+    depends_on:
+      - django_app
+
+volumes:
+  static_vol:

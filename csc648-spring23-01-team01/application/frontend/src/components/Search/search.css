@@ -1,0 +1,247 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-container {
+  float: left;
+}
+
+.logo {
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 2%;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+.row-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 400px;
+}
+
+.input-wrapper input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1 1;
+  margin-right: 10px;
+  width: 400px;
+}
+
+.input-wrapper button[type="submit"] {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 70px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 0.5px;
+  margin-left: -30px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 125px;
+  transition: background-color 0.3s ease;
+  margin-top: -17px;
+}
+
+.search-form button:hover {
+  background-color: #0d8bf2;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.publiccard img {
+  width: 100%;
+
+  object-fit: cover;
+}
+.publiccard {
+  width: 300px;
+  height: max-content;
+  margin: 20px;
+  background-color: #f6f0fb;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.publiccard h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.publiccard p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+
+.publiccard span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
+
+.search-card {
+  width: 350px;
+  height: 250px;
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.search-card h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.search-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.search-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #999999;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.profile-initial {
+  background-color: #ccc;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.profile-username {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: white;
+}
+
+.profile-dropdown {
+  position: relative;
+}
+
+.profile-dropdown-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.profile-dropdown-content {
+  position: absolute;
+  top: auto;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  display: none;
+  min-width: 120px;
+  z-index: 2;
+}
+
+.profile-dropdown:hover .profile-dropdown-content {
+  display: block;
+}
+
+.profile-dropdown-content a,
+.profile-dropdown-content button {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.profile-dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.category-head {
+  color: rgb(27, 0, 55);
+  font-size: 30px;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border-bottom: 0.1px solid #b1a6ff;
+}
+.categories {
+  margin-left: 50px;
+  margin-right: 50px;
+}
