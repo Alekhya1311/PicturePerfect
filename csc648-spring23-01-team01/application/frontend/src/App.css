@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(to right,#764BA2, #667EEA);
+}
+
+
+.about {
+  max-width: 800px;
+  margin:0 auto;
+  padding: 50px;
+}
+
+.about h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#info {
+  margin-bottom: 10px;
+
+}
+#icon {
+  display: inline;
+  height: 18px;
+  width: 18px;
+  margin-left: 5px;
+  
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+#skills{
+  margin-bottom: 70px;
+}
+.member h2 {
+  align-content: center;
+  margin-bottom: -2px;
+ }
+
+ 
+
+.member p {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 50px ;
+  margin-right: 50px;
+  }
+ 

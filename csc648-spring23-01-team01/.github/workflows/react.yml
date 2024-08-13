@@ -1,0 +1,32 @@
+name: React CI
+
+on:
+  push:
+    branches: [ "django_testing_ishika" ]
+  pull_request:
+    branches: [ "django_testing_ishika" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm ci and build
+      run: |
+        cd application/frontend
+        npm cache clean -f
+        npm install
+    - name: Run Frontend react tests
+      run: |
+        cd application/frontend
+        npm test

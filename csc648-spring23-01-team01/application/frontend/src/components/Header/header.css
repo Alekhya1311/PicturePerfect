@@ -1,0 +1,162 @@
+/* 
+.header {
+
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+ 
+
+ 
+  
+}
+.header h1{
+    
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  border-bottom-color: white;
+} */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+}
+
+.header h1 {
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(27, 0, 55);
+  padding-left: 20px;
+  padding-right: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .header h1{
+    font-size: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: rgb(27, 0, 55);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  border-bottom-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  
+  nav li {
+    margin: 1rem 0;
+  }
+}
+
+
+
+.search-button,
+.new-post-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 13, 83);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  padding: 12px 10px 12px 10px;
+  font-size: 10px;
+  
+  
+}
+
+
+@media screen and (min-width: 768px) {
+  .search-button,
+  .new-post-button {
+    font-size: 20px;
+    padding: 12px;
+    
+  }
+  
+}
+
+
+
+
+
+
+
+.search-button:hover,
+.new-post-button:hover {
+  background-color: #4b189e;
+}
+
+.search-button .icon,
+.new-post-button .icon {
+  margin-right: 5px;
+}
